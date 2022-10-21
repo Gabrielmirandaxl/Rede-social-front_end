@@ -1,0 +1,64 @@
+.container-profile{
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 390px;
+}
+
+.container-profile form{
+  background-color: #333a41;
+  width: 450px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.container-profile form .data-profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-profile form .data-profile .personal-profile {
+ margin: 15px 0px 0px 0px;
+}
+
+.container-profile form .data-profile .button {
+  margin: 25px 0px 0px 0px;
+ }
+
+ .container-profile form .data-profile .button button {
+  background-color: #3498dbb0;
+  color: #ffffffbe;
+  border: none;
+  font-size: 1.1rem;
+  padding: 7px 40px 7px 40px ;
+  border-radius: 6px;
+  transition: 400ms;
+ }
+
+ .container-profile form .data-profile .button button:hover {
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  font-size: 1.1rem;
+  padding: 7px 40px 7px 40px ;
+  border-radius: 6px;
+  transition: 400ms;
+  cursor: pointer;
+ }
+
+.container-profile form .data-profile .personal-profile label{
+  display: block;
+}
+
+.container-profile form .data-profile .personal-profile input{
+  width: 350px;
+  height: 35px;
+  padding: 0px 0px 0px 5px ;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  
+}

@@ -1,0 +1,29 @@
+.home-page{
+  padding-top: 5rem;
+  height: 35rem;
+}
+
+.home-page .form-search form{
+  display: flex;
+  justify-content: center;
+  margin: 25px 0px 0px 0px;
+}
+
+.home-page .form-search form .data input{
+  width: 250px;
+  height: 30px;
+  font-size: 1.3rem;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  padding: 0px 0px 0px 4px;
+}
+
+.home-page .form-search form .data .icon-search{
+  color: #141414;
+  position: absolute;
+  top: 113px;
+  right: 525px;
+  cursor: pointer;
+}
+
