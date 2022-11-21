@@ -1,0 +1,82 @@
+
+:root{
+  --primary-color: #141414;
+}
+
+.container-register{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 360px;
+}
+
+.container-register .form-register{
+width: 260px;
+height: 340px;
+padding: 32px 0px 0px 0px;
+border: none;
+border-radius: 10px;
+
+
+}
+
+.container-register .form-register .register{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+  
+}
+
+.container-register .form-register .register .personal-register{
+margin: 25px 0px 0px 0px;
+}
+
+.container-register .form-register .register .personal-register label{
+color: #ffffff;
+display: block;
+margin: 0px 0px 5px 0px;
+font-size: 1rem;
+}
+
+.container-register .form-register .register .personal-register input{
+width: 250px;
+height: 30px;
+border: none;
+border-bottom: 1px solid #ffffff;
+background-color: #0F233B;
+color: #ffffff;
+outline: none;
+padding: 0px 0px 0px 5px;
+
+}
+
+.container-register .form-register  .button-register{
+margin: 20px 0px 0px 0px; 
+text-align: start;
+}
+
+.container-register .form-register  .button-register button{
+padding: 5px 15px 5px 15px;
+background-color: #d95a5396;
+color: #ffffff9f;
+border: none;
+font-size: 1rem;
+border-radius: 6px;
+cursor: pointer;
+transition: 400ms;
+font-weight: bold;
+text-transform: uppercase;
+
+}
+
+.container-register .form-register  .button-register button:hover{
+padding: 5px 25px 5px 25px;
+background-color: #D95A53;
+color: #ffffff;
+border: none;
+font-size: 1rem;
+border-radius: 6px;
+cursor: pointer;
+transition: 400ms;
+  }

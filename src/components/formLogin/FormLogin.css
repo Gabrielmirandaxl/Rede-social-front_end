@@ -1,0 +1,92 @@
+
+:root{
+  --primary-color: #141414;
+}
+
+.container-login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 340px;
+}
+
+.container-login .form-login{
+width: 260px;
+height: 270px;
+padding: 32px 0px 0px 0px;
+border: none;
+border-radius: 10px;
+}
+
+.container-login .form-login .login{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+  
+}
+
+
+.container-login .form-login .login .user-login {
+text-align: center;
+text-transform: uppercase;
+color: #141414;
+margin: 7px 0px 0px 0px;
+}
+
+.container-login .form-login .login .user-login .icon-user{
+color: var(--primary-color);
+font-size: 1.7rem;
+   
+}
+
+.container-login .form-login .login .personal-login{
+margin: 20px 0px 0px 0px;
+}
+
+.container-login .form-login .login .personal-login label{
+color: #ffffff;
+display: block;
+margin: 0px 0px 5px 0px;
+font-size: 1rem;
+}
+
+.container-login .form-login .login .personal-login input{
+  width: 250px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  background-color: #0F233B;
+  color:#ffffff;
+  outline: none;
+  padding: 0px 0px 0px 5px;
+
+}
+
+.container-login .form-login .button-login{
+margin: 20px 0px 0px 0px; 
+}
+
+.container-login .form-login .button-login button{
+  padding: 5px 15px 5px 15px;
+  background-color: #d95a5396;
+  color: #ffffff9f;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 400ms;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.container-login .form-login .button-login button:hover{
+  padding: 5px 25px 5px 25px;
+  background-color: #D95A53;
+  color: #ffffff;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 400ms;
+  }
