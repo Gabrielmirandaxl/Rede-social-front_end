@@ -1,0 +1,78 @@
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+.container .divs{
+  display: flex;
+}
+
+.container .divs .welcome{
+ width: 450px;
+ height: 500px;
+ background-color: #D15651;
+}
+
+.container .divs .forms{
+ width: 450px;
+ height: 500px;
+ background-color: #0F233B;
+}
+
+.container .divs .forms .options{
+  text-align: end;
+  margin: 30px 40px 0px 0px;
+}
+
+.container .divs .forms .options button{
+  background-color: #405E7C;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px 5px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.container .divs .forms .options .sign-in{
+  border-radius: 10px 0px 0px 10px;
+ 
+}
+
+.container .divs .forms .options .sign-in.click{
+  background-color: #D15651;
+ 
+}
+
+.container .divs .forms .options .sign-up{
+  border-radius: 0px 10px 10px 0px;
+}
+
+.container .divs .forms .options .sign-up.click{
+  background-color: #D15651;
+}
+
+.container .divs .welcome{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.container .divs .welcome .message{
+  text-align: center;
+  margin: 10px 0px 0px 0px;
+}
+
+.container .divs .welcome .message h2{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.container .divs .welcome .sign img{
+  width: 420px;
+  height: 300px;
+}
