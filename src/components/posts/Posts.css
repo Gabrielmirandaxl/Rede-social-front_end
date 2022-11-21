@@ -1,0 +1,81 @@
+.post{
+  background-color: #0F233B;
+  width: 310px;
+  height: 380px;
+  border-radius: 6px;
+}
+
+.post .user{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 15px 0px 0px 15px;
+}
+
+.post .post-image{
+  
+  margin: 20px 0px 0px 15px;
+}
+
+.post .post-image img{
+  width: 280px;
+  height: 200px;
+  border: none;
+  border-radius: 6px;
+}
+
+.post .actions{
+  margin: 10px 0px 0px 15px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.post .actions .like,  .comment{
+  width: 25px;
+  height: 25px;
+  margin: 0px 8px 0px 0px;
+  cursor: pointer;
+}
+
+.post .actions .likes, .commentes{
+  color: #D15651;
+  margin: 0px 15px 0px 0px;
+  cursor: pointer;
+
+}
+
+.post .message{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 10px 0px 0px 15px;
+}
+
+.post .message h4{
+ color:#D15651;
+}
+
+
+.text-comment{
+  color: #000000;
+}
+
+.text{
+  color:#D15651;
+}
+
+.text p{
+  color: #000000;
+}
+
+.comment-user{
+  width: 300px;
+  height: 25px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  padding: 0px 0px 0px 8px;
+  margin: 0px 10px 10px 0px;
+  
+}
