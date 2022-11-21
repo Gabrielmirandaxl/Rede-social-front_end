@@ -1,0 +1,62 @@
+.post-create{
+  padding-top: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.post-create form{
+  width: 400px;
+  height: 200px;
+  border: none;
+  border-radius: 10px;
+  background-color: #0F233B;
+}
+
+.post-create form .insert{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+}
+
+.post-create form .insert .data-insert label{
+  display: block;
+}
+
+.post-create form .insert .data-insert input{
+  width: 350px;
+  height: 35px;
+  padding: 0px 0px 0px 5px ;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+}
+
+.post-create form .insert .button-insert{
+  margin: 20px;
+}
+
+.post-create form .insert .button-insert button{
+  background-color: #06fc44a8;
+  color: #ffffffb0;
+  border: none;
+  font-size: 1.1rem;
+  padding: 7px 40px 7px 40px ;
+  border-radius: 6px;
+  transition: 400ms;
+  cursor: pointer;
+}
+
+.post-create form .insert .button-insert button:hover{
+  background-color: #06fc43;
+  color: #ffffff;
+  border: none;
+  font-size: 1.1rem;
+  padding: 7px 40px 7px 40px ;
+  border-radius: 6px;
+  transition: 400ms;
+  cursor: pointer;
+}
