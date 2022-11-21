@@ -5,7 +5,9 @@ export const AuthContext = createContext()
 export const AuthContextProvider = ({children}) => {
 
   const [token, setToken] = useState(null)
-  console.log(token)
+  const [posts, setPosts] = useState([])
+  const [like, setLike] = useState()
+ console.log(posts)
 
   useEffect(() => {
 
@@ -21,7 +23,7 @@ export const AuthContextProvider = ({children}) => {
   }, [])
 
   return (
-    <AuthContext.Provider value={{token, setToken, signed: !!token}}>
+    <AuthContext.Provider value={{token, setToken, signed: !!token, posts, setPosts, like, setLike}}>
       {children}
     </AuthContext.Provider>
   )
