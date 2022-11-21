@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from 'react'
 import axios from 'axios'
 import './Profile.css'
+import Avatar from '@mui/material/Avatar';
 
 const Profile = () =>{
 
@@ -8,7 +9,6 @@ const Profile = () =>{
   const [name, setName] = useState()
   const [email, setEmail] = useState()
   const [password, setPassword] = useState()
-
   axios.interceptors.request.use(function(config){
     config.headers.authorization = `Bearer ${localStorage.getItem("token")}`
     return config
@@ -17,8 +17,8 @@ const Profile = () =>{
   useEffect(() =>{
     axios.get("http://localhost:8080/profile")
     .then((response) => {
-      console.log(response.data)
-      const {name, email} = response.data
+      const {name, email, profileImage} = response.data
+      setImage(profileImage)
       setName(name)
       setEmail(email)
     }) 
@@ -32,10 +32,17 @@ const Profile = () =>{
        password: password,
        profileImage: image
        
+     }, {
+      headers: {   
+          'Content-Type': 'multipart/form-data', 
+      }
      })
+
      .then((response) => {
       console.log(response)
-    
+
+      
+      window.location.reload()
      })
 
   }
@@ -48,10 +55,15 @@ const Profile = () =>{
           <div className='data-profile'>
                
                <div className='personal-profile'>
-                 <label>Foto so usuário</label>
+                 <label>Foto do usuário</label>
+                 
+                 <div className='img-profile'>
+                  <Avatar src={`http://localhost:8080/uploads/${image}`} className='img'>{name}</Avatar>
+                 </div>
+
                  <input 
                  type="file"
-                 onChange={(e) => setImage(e.target.files)} 
+                 onChange={(e) => setImage(e.target.files[0])} 
                  />
                </div>
 
