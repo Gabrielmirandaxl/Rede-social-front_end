@@ -1,11 +1,13 @@
 
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import React,{useContext} from 'react'
+
 //pages
 import Home from "./pages/home/Home";
-import Login from "./pages/Auth/Login";
-import Register from "./pages/Auth/Register";
 import Profile from './pages/profile/Profile'
+import Auth from './pages/auth/Auth'
+import Posts from './pages/Posts/Posts'
+
 // context
 import { AuthContext } from "./context/AtuhContext";
 
@@ -20,17 +22,20 @@ function App() {
   <>
  
   <Router>
-     <Header/>
+
+    {signed ?  <Header/> : ""}
+
     <Routes>
+      <Route  path="/auth" element={signed ? "" : <Auth/> }/>
       <Route path="/" element={ signed ? <Home/> : ''}/>
-      <Route path="/login" element={<Login/>}/>
-      <Route path="/register" element={<Register/>}/>
       <Route path="/profile" element={ signed ? <Profile/> : ''} />
+      <Route path="/create" element={signed ? <Posts/> : ""} />
     </Routes>
 
-  </Router>
 
-  </>
+l
+     </Router>
+      </>
   );
 }
 
